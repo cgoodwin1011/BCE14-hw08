@@ -1,0 +1,27 @@
+{
+  "name": "hw08",
+  "version": "1.0.0",
+  "description": "a node js based knock-off of siri...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgoodwin1011/hw08.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgoodwin1011/hw08/issues"
+  },
+  "homepage": "https://github.com/cgoodwin1011/hw08#readme",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "node-spotify-api": "^1.0.7",
+    "request": "^2.85.0",
+    "twitter": "^1.7.1"
+  }
+}
