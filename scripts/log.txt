@@ -1,0 +1,24 @@
+
+*********************************************************
+node driri,js movie-this gimme shelter 
+*********************************************************
+       Title: Gimme Shelter
+    Released: 1970
+ imdb Rating: 7.9
+        Plot: A harrowing documentary of the Stones' 1969 tour, with much of the focus on the tragic concert at Altamont.
+ Rotten Tom.: 100%
+      Actors: The Rolling Stones, Mick Jagger, Charlie Watts, Keith Richards
+
+*********************************************************
+node driri,js my-tweets 
+*********************************************************
+My tweets are as follows
+	 ->before social media, you had to go to bars to talk to strangers ... or take mass transit...
+	 ->I'm thinking about creating a hang out IRL app.  Person X declares he/she is going to place Y and invites app "frie… https://t.co/Zf9lZlijtU
+	 ->I need to rack up a dozen or so tweets to make this experiment work
+	 ->never trust anything with a clever acronym.  tyrust things with bad acronyms even less.
+	 ->It's not particularly rational to want to share public thoughts with strangers.
+	 ->It's insane to share private thoughts with strangers.
+	 ->there's no difference between tweeting and leaning out your window &amp; shouting your opinion.
+	 ->I'm doing this to learn twitter api's
+	 ->social media is a waste of time

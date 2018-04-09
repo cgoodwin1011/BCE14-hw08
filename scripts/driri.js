@@ -7,30 +7,20 @@ var util = require('util');
 var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
-
 var myInputs = process.argv;
 
-var util = require('util');
 // var log_file = fs.appendFile(__dirname + '/debug.log', log_stdout);
 var log_stdout = process.stdout;
 
 console.log = function(d) { //
   // log_file.write(util.format(d) + '\n');
-  fs.appendFile('./output.log', util.format(d), function(err) {
+  fs.appendFile('./log.txt', util.format(d), function(err) {
     if (err) {
       console.log(err+'\n');
     }
   });
   log_stdout.write(util.format(d) + '\n');
 };
-
-
-/*
-  * `my-tweets`
-  * `spotify-this-song`
-  * `movie-this`
-  * `do-what-it-says`
-*/
 
 var verb = myInputs[2];
 var subject = '';
@@ -41,9 +31,15 @@ for (var i=3; i < myInputs.length; i++) {
 subject.trim();
 
 function handleRequest(inVerb, inSubject) {
+  var filler = "\n*********************************************************\n"
+  fs.appendFile('./log.txt', filler+"node driri,js "+inVerb+" "+inSubject+filler, function(err) {
+    if (err) {
+      console.log(err+'\n');
+    }
+  });
   switch(inVerb) {
-    case 'my-tweets':
-        var params = {screen_name: 'unrealmrNobody'};
+    case 'my-tweets':  
+      var params = {screen_name: 'unrealmrNobody'};
         client.get('statuses/user_timeline', params, function(error, tweets, response) {
           if (!error) {
             console.log("My tweets are as follows\n");
@@ -54,7 +50,6 @@ function handleRequest(inVerb, inSubject) {
             console.log("error is "+error)
           }
         });
-
         break;
     case 'spotify-this-song':
       for (var j = 0; j < inSubject.length; j++) {
