@@ -116,7 +116,7 @@ function handleRequest(inVerb, inSubject) {
         });
       break;
     default:
-      console.log("that is not a command I recognize");
+      console.log("That is not a command I recognize!\n\nThe commands that I understand are as follows:\n>'my-tweets', which will give you the last 20 tweets I've done\n>'movie-this' followed by the name of a movie, which yields information about the movie\nor\n>'spotify-this-song' followed by the name of a song, which gives inforamtion about the song.\nYou can also try 'do-what-it-says' which reacts to a command in a file called random.txt");
   }
 }
 
